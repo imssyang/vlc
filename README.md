@@ -1,0 +1,2 @@
+# vlc
+/opt/vlc
