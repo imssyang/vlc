@@ -1,0 +1,16 @@
+apt-get build-dep vlc
+
+./configure --prefix=/opt/vlc \
+  --sbindir=/opt/vlc/bin \
+  --libexecdir=/opt/vlc/bin/libexec \
+  --sysconfdir=/opt/vlc/conf \
+  --enable-run-as-root \
+  --disable-a52 \
+  --disable-libva \
+  --disable-opencv \
+  --disable-vdpau \
+  --disable-vpx
+
+make -j8
+make install
+
